@@ -1,1 +1,2 @@
-# freia-app
+# Freia
+## Menstruation cycle calendar
