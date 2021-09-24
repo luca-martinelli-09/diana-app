@@ -1,2 +1,2 @@
-# Freia
+# Diana
 ## Menstruation cycle calendar
