@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface FreiaTests : XCTestCase
+@interface DianaTests : XCTestCase
 
 @end
 
-@implementation FreiaTests
+@implementation DianaTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
