@@ -1,32 +1,32 @@
 import {StyleSheet} from 'react-native';
 
-const colorSchemeLight = {
+const colorScheme = {
   backgroundColor: '#fff',
   primaryColor: '#06c',
   onPrimaryColor: '#fff',
   subtextColor: '#666',
 };
 
-const satusBarLightProps = {
-  backgroundColor: colorSchemeLight.backgroundColor,
+const statusBarProps = {
+  backgroundColor: colorScheme.backgroundColor,
   barStyle: 'dark-content',
 };
 
-const lightTheme = StyleSheet.create({
+const theme = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: colorSchemeLight.backgroundColor,
+    backgroundColor: colorScheme.backgroundColor,
   },
 
   header: {
-    backgroundColor: colorSchemeLight.primaryColor,
+    backgroundColor: colorScheme.primaryColor,
     alignItems: 'center',
     justifyContent: 'center',
     height: 90,
   },
 
   whiteIconHeader: {
-    backgroundColor: colorSchemeLight.backgroundColor,
+    backgroundColor: colorScheme.backgroundColor,
     paddingVertical: 20,
     paddingHorizontal: 25,
     alignItems: 'center',
@@ -34,14 +34,15 @@ const lightTheme = StyleSheet.create({
   },
 
   headerText: {
-    color: colorSchemeLight.onPrimaryColor,
+    backgroundColor: colorScheme.backgroundColor,
+    color: colorScheme.onPrimaryColor,
     fontWeight: 'bold',
     fontSize: 30,
   },
 
   container: {
     flex: 1,
-    backgroundColor: colorSchemeLight.backgroundColor,
+    backgroundColor: colorScheme.backgroundColor,
     padding: 25,
   },
 
@@ -64,8 +65,8 @@ const lightTheme = StyleSheet.create({
 
   subtext: {
     fontSize: 16,
-    color: colorSchemeLight.subtextColor,
+    color: colorScheme.subtextColor,
   },
 });
 
-export {lightTheme, colorSchemeLight, satusBarLightProps};
+export {theme, colorScheme, statusBarProps};

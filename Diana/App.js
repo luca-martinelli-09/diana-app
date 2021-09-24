@@ -4,7 +4,6 @@ import {
   SafeAreaView,
   ScrollView,
   StatusBar,
-  StyleSheet,
   Text,
   useColorScheme,
   View,
@@ -21,12 +20,12 @@ const App = () => {
   return (
     <ThemeContext.Provider value={appTheme}>
       <SafeAreaView>
-        <StatusBar {...appTheme.statusBarProps} />
+        <StatusBar {...appTheme.statusBarProps} /> 
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={appTheme.colorScheme.backgroundColor}>
           <View style={appTheme.style.container}>
-            <Text style={appTheme.style.headerText}>Test</Text>
+            <Text style={appTheme.style.headerText}>Diana</Text>
           </View>
         </ScrollView>
       </SafeAreaView>

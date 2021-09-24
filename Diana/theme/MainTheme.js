@@ -1,5 +1,5 @@
-import {lightTheme, colorSchemeLight, satusBarLightProps} from './LightTheme';
-import {darkTheme, colorSchemeDark, satusBarDarkProps} from './DarkTheme';
+import {theme as lightTheme, colorScheme as colorSchemeLight, statusBarProps as satusBarLightProps} from './LightTheme';
+import {theme as darkTheme, colorScheme as colorSchemeDark, statusBarProps as satusBarDarkProps} from './DarkTheme';
 
 const MainTheme = {
   light: {
