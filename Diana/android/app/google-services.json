@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "570067801670",
+    "project_id": "diana-c894b",
+    "storage_bucket": "diana-c894b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570067801670:android:a3f6a60f19f6a6942c1c47",
+        "android_client_info": {
+          "package_name": "com.lucamartinelli.diana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570067801670-vr57ag7reikjkuif8rlarl3bddnk6e3n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lucamartinelli.diana",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "570067801670-ietbk3ij1esd56l022qj6sibugcc63m1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNIKTqTnulvkkVb2VDy8lKocpUgiRKf5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570067801670-ietbk3ij1esd56l022qj6sibugcc63m1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
