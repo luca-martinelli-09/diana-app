@@ -9,22 +9,13 @@ const SplashScreen = () => {
   const appTheme = useContext(ThemeContext);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={appTheme.style.mainContainer}>
       <StatusBar {...appTheme.statusBarProps} />
-      <View
-        style={[
-          appTheme.style.container,
-          {backgroundColor: appTheme.colorScheme.backgroundColor, flex: 1},
-        ]}>
-        <View
-          style={{
-            marginBottom: 50,
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-        </View>
-        <ActivityIndicator size="large" color={appTheme.colorScheme.textColor} />
+      <View style={appTheme.style.container}>
+        <ActivityIndicator
+          size="large"
+          color={appTheme.colorScheme.textColor}
+        />
       </View>
     </SafeAreaView>
   );
