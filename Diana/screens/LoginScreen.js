@@ -1,10 +1,17 @@
 import React, {useContext} from 'react';
 
-import {StatusBar, View, SafeAreaView, Button} from 'react-native';
+import {
+  StatusBar,
+  View,
+  SafeAreaView,
+  Text,
+  TouchableHighlight,
+} from 'react-native';
 
 // External libraries
 import auth from '@react-native-firebase/auth';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 // Theme
 import {ThemeContext, AuthContext} from '../components/Context';
@@ -44,7 +51,12 @@ const LoginScreen = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <Button onPress={onGoogleButtonPress} title="Login" />
+          <TouchableHighlight onPress={onGoogleButtonPress}>
+            <View>
+              <Icon name="logo-google" />
+              <Text>Login with Google</Text>
+            </View>
+          </TouchableHighlight>
         </View>
       </View>
     </SafeAreaView>
