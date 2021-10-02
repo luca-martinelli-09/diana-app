@@ -1,5 +1,17 @@
 import {StyleSheet} from 'react-native';
 
+const metrics = {
+  // General
+  borderRadius: 18,
+  padding: 25,
+  headerHeight: 90,
+  marginSpacer: 20,
+
+  // Buttons
+  buttonPaddingVertical: 15,
+  buttonPaddingHorizontal: 25,
+};
+
 const createThemeFromColorScheme = colorScheme => {
   return StyleSheet.create({
     mainContainer: {
@@ -10,14 +22,14 @@ const createThemeFromColorScheme = colorScheme => {
     container: {
       flex: 1,
       backgroundColor: colorScheme.backgroundColor,
-      padding: 25,
+      padding: metrics.padding,
     },
 
     header: {
       backgroundColor: colorScheme.primaryColor,
       alignItems: 'center',
       justifyContent: 'center',
-      height: 90,
+      height: metrics.headerHeight,
     },
 
     whiteIconHeader: {
@@ -41,27 +53,30 @@ const createThemeFromColorScheme = colorScheme => {
       alignItems: 'center',
     },
 
-    title: {
-      fontSize: 45,
-      marginBottom: 30,
+    title1: {
+      fontSize: 35,
+      fontFamily: 'Manrope-Regular',
+      color: colorScheme.textColor,
     },
 
     title2: {
-      fontSize: 30,
-      fontWeight: 'bold',
-      marginBottom: 30,
+      fontSize: 50,
+      color: colorScheme.textColor,
+      fontFamily: 'DMSerifDisplay-Regular',
     },
 
     paragraph: {
       fontSize: 18,
+      fontFamily: 'Manrope-Regular',
       color: colorScheme.textColor,
     },
 
     subtext: {
       fontSize: 16,
+      fontFamily: 'Manrope-Regular',
       color: colorScheme.subtextColor,
     },
   });
 };
 
-export {createThemeFromColorScheme};
+export {createThemeFromColorScheme, metrics};

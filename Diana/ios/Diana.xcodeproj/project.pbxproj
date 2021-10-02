@@ -28,6 +28,15 @@
 		3B3A9716E42E4139BCDFD16B /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E218D1C95894C4C95482BCB /* Octicons.ttf */; };
 		499388C25AA444EE92682C76 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C26A94C2F64C7197A79F34 /* SimpleLineIcons.ttf */; };
 		4D8214E9CAFF4CB8808FC945 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A8122A18F5A4BB99D7C4FD6 /* Zocial.ttf */; };
+		32EC5132CCED4DB588D23A29 /* DMSerifDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55A341D1EBC849E6BC9587E9 /* DMSerifDisplay-Regular.ttf */; };
+		179D41D33A8A4CFC97C7445B /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5EDC777D854411F9AB94CC8 /* Raleway-Bold.ttf */; };
+		36AAC58306FF4E7A84224081 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5991E7A3160B4B4E9B36EB59 /* Raleway-Medium.ttf */; };
+		F728372E286C404385E83073 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C679E3E5078A4A17A41208CC /* Raleway-Regular.ttf */; };
+		C021C2AAE8854641AD87760F /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40767135175948D7A4E7CD02 /* Raleway-SemiBold.ttf */; };
+		7E4023CFF23741B3848A118A /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19E907F002A946DCADE9FFED /* Manrope-Bold.ttf */; };
+		4E4B0BBC6A8245C2ACA4D066 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0260D719A4E2BB50B24A1 /* Manrope-Medium.ttf */; };
+		CD43E35DFE58404896D99FEF /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35C1C9EF953E41CBA82AF298 /* Manrope-Regular.ttf */; };
+		80A55D2301244FFDBF1055E8 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AC0D47DD9E44C78A3E6C76F /* Manrope-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +77,15 @@
 		4E218D1C95894C4C95482BCB /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E7C26A94C2F64C7197A79F34 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		1A8122A18F5A4BB99D7C4FD6 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		55A341D1EBC849E6BC9587E9 /* DMSerifDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "DMSerifDisplay-Regular.ttf"; path = "../src/assets/fonts/DMSerifDisplay/DMSerifDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5EDC777D854411F9AB94CC8 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5991E7A3160B4B4E9B36EB59 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium.ttf"; path = "../src/assets/fonts/Raleway/Raleway-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C679E3E5078A4A17A41208CC /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		40767135175948D7A4E7CD02 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../src/assets/fonts/Raleway/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		19E907F002A946DCADE9FFED /* Manrope-Bold.ttf */ = {isa = PBXFileReference; name = "Manrope-Bold.ttf"; path = "../src/assets/fonts/Manrope/Manrope-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8DB0260D719A4E2BB50B24A1 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; name = "Manrope-Medium.ttf"; path = "../src/assets/fonts/Manrope/Manrope-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35C1C9EF953E41CBA82AF298 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; name = "Manrope-Regular.ttf"; path = "../src/assets/fonts/Manrope/Manrope-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9AC0D47DD9E44C78A3E6C76F /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; name = "Manrope-SemiBold.ttf"; path = "../src/assets/fonts/Manrope/Manrope-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +194,15 @@
 				4E218D1C95894C4C95482BCB /* Octicons.ttf */,
 				E7C26A94C2F64C7197A79F34 /* SimpleLineIcons.ttf */,
 				1A8122A18F5A4BB99D7C4FD6 /* Zocial.ttf */,
+				55A341D1EBC849E6BC9587E9 /* DMSerifDisplay-Regular.ttf */,
+				E5EDC777D854411F9AB94CC8 /* Raleway-Bold.ttf */,
+				5991E7A3160B4B4E9B36EB59 /* Raleway-Medium.ttf */,
+				C679E3E5078A4A17A41208CC /* Raleway-Regular.ttf */,
+				40767135175948D7A4E7CD02 /* Raleway-SemiBold.ttf */,
+				19E907F002A946DCADE9FFED /* Manrope-Bold.ttf */,
+				8DB0260D719A4E2BB50B24A1 /* Manrope-Medium.ttf */,
+				35C1C9EF953E41CBA82AF298 /* Manrope-Regular.ttf */,
+				9AC0D47DD9E44C78A3E6C76F /* Manrope-SemiBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -287,6 +314,15 @@
 				3B3A9716E42E4139BCDFD16B /* Octicons.ttf in Resources */,
 				499388C25AA444EE92682C76 /* SimpleLineIcons.ttf in Resources */,
 				4D8214E9CAFF4CB8808FC945 /* Zocial.ttf in Resources */,
+				32EC5132CCED4DB588D23A29 /* DMSerifDisplay-Regular.ttf in Resources */,
+				179D41D33A8A4CFC97C7445B /* Raleway-Bold.ttf in Resources */,
+				36AAC58306FF4E7A84224081 /* Raleway-Medium.ttf in Resources */,
+				F728372E286C404385E83073 /* Raleway-Regular.ttf in Resources */,
+				C021C2AAE8854641AD87760F /* Raleway-SemiBold.ttf in Resources */,
+				7E4023CFF23741B3848A118A /* Manrope-Bold.ttf in Resources */,
+				4E4B0BBC6A8245C2ACA4D066 /* Manrope-Medium.ttf in Resources */,
+				CD43E35DFE58404896D99FEF /* Manrope-Regular.ttf in Resources */,
+				80A55D2301244FFDBF1055E8 /* Manrope-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,16 +5,19 @@ import {
   View,
   SafeAreaView,
   Text,
-  TouchableHighlight,
 } from 'react-native';
 
 // External libraries
 import auth from '@react-native-firebase/auth';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {localizedStrings} from '../components/Strings';
 
 // Theme
-import {ThemeContext, AuthContext} from '../components/Context';
+import {ThemeContext} from '../components/Context';
+import {Button} from '../components/Button';
+
+// Assets
+import DianaCharacter from '../src/assets/images/diana-character.svg';
 
 GoogleSignin.configure({
   webClientId:
@@ -23,7 +26,6 @@ GoogleSignin.configure({
 
 const LoginScreen = () => {
   const appTheme = useContext(ThemeContext);
-  const user = useContext(AuthContext);
 
   async function onGoogleButtonPress() {
     // Get the users ID token
@@ -39,24 +41,30 @@ const LoginScreen = () => {
   return (
     <SafeAreaView style={appTheme.style.mainContainer}>
       <StatusBar {...appTheme.statusBarProps} />
-      <View
-        style={[
-          appTheme.style.container,
-          {backgroundColor: appTheme.colorScheme.backgroundColor, flex: 1},
-        ]}>
+      <View style={appTheme.style.container}>
+        <Text style={appTheme.style.title1}>{localizedStrings.welcome}</Text>
+        <Text style={appTheme.style.title2}>{localizedStrings.appName}</Text>
+        <Text
+          style={[
+            appTheme.style.paragraph,
+            {marginTop: appTheme.metrics.marginSpacer},
+          ]}>
+          {localizedStrings.appDescription}
+        </Text>
         <View
           style={{
-            marginBottom: 50,
             flex: 1,
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <TouchableHighlight onPress={onGoogleButtonPress}>
-            <View>
-              <Icon name="logo-google" />
-              <Text>Login with Google</Text>
-            </View>
-          </TouchableHighlight>
+          <DianaCharacter height={400} width={400 * 0.63} />
+        </View>
+        <View>
+          <Button
+            icon="logo-google"
+            onPress={onGoogleButtonPress}
+            title={localizedStrings.signIn}
+          />
         </View>
       </View>
     </SafeAreaView>

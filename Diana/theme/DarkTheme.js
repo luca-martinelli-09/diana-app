@@ -1,11 +1,13 @@
 import {createThemeFromColorScheme} from './CommonTheme';
 
 const colorScheme = {
-  backgroundColor: '#212121',
+  // General
+  backgroundColor: '#121212',
   textColor: '#fff',
-  primaryColor: '#06c',
-  onPrimaryColor: '#fff',
-  subtextColor: '#eee',
+
+  // Button
+  buttonColor: '#CDF2CA',
+  onButtonColor: '#3A6351',
 };
 
 const statusBarProps = {
