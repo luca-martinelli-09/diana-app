@@ -6,10 +6,12 @@ const metrics = {
   padding: 25,
   headerHeight: 90,
   marginSpacer: 20,
+  borderWidth: 2,
 
   // Buttons
   buttonPaddingVertical: 15,
   buttonPaddingHorizontal: 25,
+  buttonMarginVertical: 5,
 };
 
 const createThemeFromColorScheme = colorScheme => {
@@ -72,9 +74,10 @@ const createThemeFromColorScheme = colorScheme => {
     },
 
     subtext: {
-      fontSize: 16,
+      fontSize: 14,
       fontFamily: 'Manrope-Regular',
-      color: colorScheme.subtextColor,
+      color: colorScheme.textColor,
+      opacity: 0.7,
     },
   });
 };

@@ -1,9 +1,10 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 
 import {StatusBar, View, SafeAreaView, Text} from 'react-native';
 
 // External libraries
 import auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
 
 // Theme
 import {ThemeContext, AuthContext} from '../components/Context';
@@ -13,6 +14,12 @@ import {localizedStrings} from '../components/Strings';
 const HomeScreen = () => {
   const appTheme = useContext(ThemeContext);
   const user = useContext(AuthContext);
+
+  useEffect(async () => {
+    const userSettings = await firestore().collection('users').doc(user.uid).get();
+
+    console.log(userSettings.exists);
+  }, []);
 
   function getOnlyName(name) {
     return name.split(' ')[0];
