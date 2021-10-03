@@ -6,12 +6,16 @@ const metrics = {
   padding: 25,
   headerHeight: 90,
   marginSpacer: 20,
+  marginHorizontal: 8,
   borderWidth: 2,
 
   // Buttons
   buttonPaddingVertical: 15,
   buttonPaddingHorizontal: 25,
   buttonMarginVertical: 5,
+
+  // Icons
+  smallIconSize: 17,
 };
 
 const createThemeFromColorScheme = colorScheme => {

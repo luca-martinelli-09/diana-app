@@ -37,7 +37,11 @@ const App = () => {
 
     if (isLoading) {
       setIsLoading(false); // Authentication completed
-      checkUser(user); // Check if it is the first time the user login
+
+      // Check if it is the first time the user login
+      if (user != null) {
+        checkUser(user);
+      }
     }
   }
 
@@ -52,7 +56,7 @@ const App = () => {
 
     // Try to get the document of the user
     const userDocument = await firestore()
-      .collection('users')
+      .collection('Users')
       .doc(user.uid)
       .get();
 

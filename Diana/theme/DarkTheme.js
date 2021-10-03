@@ -4,10 +4,11 @@ const colorScheme = {
   // General
   backgroundColor: '#121212',
   textColor: '#fff',
+  errorColor: '#F38BA0',
 
   // Button
   buttonColor: '#CDF2CA',
-  onButtonColor: '#3A6351',
+  onButtonColor: '#064420',
 };
 
 const statusBarProps = {

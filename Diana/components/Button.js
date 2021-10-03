@@ -14,9 +14,13 @@ const Button = props => {
   return (
     <TouchableHighlight
       onPress={props.onPress}
-      style={{
-        borderRadius: appTheme.metrics.borderRadius,
-      }}>
+      style={[
+        props.style,
+        {
+          borderRadius: appTheme.metrics.borderRadius,
+          marginVertical: appTheme.metrics.buttonMarginVertical,
+        },
+      ]}>
       <View
         style={{
           paddingVertical:
@@ -27,25 +31,28 @@ const Button = props => {
           justifyContent: 'center',
           alignItems: 'center',
           flexDirection: 'row',
-          marginVertical: appTheme.metrics.buttonMarginVertical,
         }}>
         {props.icon ? (
           <Icon
             name={props.icon}
             size={25}
-            style={{marginRight: 8}}
+            style={{
+              marginRight: props.title ? appTheme.metrics.marginHorizontal : 0,
+            }}
             color={appTheme.colorScheme.onButtonColor}
             {...props.iconProps}
           />
         ) : null}
-        <Text
-          style={{
-            color: appTheme.colorScheme.onButtonColor,
-            fontSize: 16,
-            fontFamily: 'Manrope-Bold',
-          }}>
-          {props.title}
-        </Text>
+        {props.title ? (
+          <Text
+            style={{
+              color: appTheme.colorScheme.onButtonColor,
+              fontSize: 16,
+              fontFamily: 'Manrope-Bold',
+            }}>
+            {props.title}
+          </Text>
+        ) : null}
       </View>
     </TouchableHighlight>
   );
@@ -57,9 +64,13 @@ const OutlineButton = props => {
   return (
     <TouchableHighlight
       onPress={props.onPress}
-      style={{
-        borderRadius: appTheme.metrics.borderRadius,
-      }}>
+      style={[
+        props.style,
+        {
+          borderRadius: appTheme.metrics.borderRadius,
+          marginVertical: appTheme.metrics.buttonMarginVertical,
+        },
+      ]}>
       <View
         style={{
           paddingVertical:
@@ -72,25 +83,28 @@ const OutlineButton = props => {
           justifyContent: 'center',
           alignItems: 'center',
           flexDirection: 'row',
-          marginVertical: appTheme.metrics.buttonMarginVertical,
         }}>
         {props.icon ? (
           <Icon
             name={props.icon}
             size={25}
-            style={{marginRight: 8}}
+            style={{
+              marginRight: props.title ? appTheme.metrics.marginHorizontal : 0,
+            }}
             color={appTheme.colorScheme.buttonColor}
             {...props.iconProps}
           />
         ) : null}
-        <Text
-          style={{
-            color: appTheme.colorScheme.buttonColor,
-            fontSize: 16,
-            fontFamily: 'Manrope-Bold',
-          }}>
-          {props.title}
-        </Text>
+        {props.title ? (
+          <Text
+            style={{
+              color: appTheme.colorScheme.buttonColor,
+              fontSize: 16,
+              fontFamily: 'Manrope-Bold',
+            }}>
+            {props.title}
+          </Text>
+        ) : null}
       </View>
     </TouchableHighlight>
   );
