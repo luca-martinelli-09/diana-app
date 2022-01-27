@@ -15,10 +15,15 @@ const HomeScreen = () => {
   const appTheme = useContext(ThemeContext);
   const user = useContext(AuthContext);
 
-  useEffect(async () => {
-    const userSettings = await firestore().collection('users').doc(user.uid).get();
-
-    console.log(userSettings.exists);
+  useEffect(() => {
+    async function getSettings() {
+      const userSettings = await firestore()
+        .collection('Users')
+        .doc(user.uid)
+        .get();
+      console.log(userSettings);
+    }
+    getSettings();
   }, []);
 
   function getOnlyName(name) {
